@@ -1,0 +1,126 @@
+* {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #02462e;
+}
+header img {
+    display: flex;
+    height: 13rem;
+    width: 15rem;
+    margin: -4rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px auto;
+    max-width: 1200px;
+}
+.nav {
+    display: flex;
+    gap: 2rem;
+    height:8rem;
+    font-size:2.5rem;
+}
+.nav ul {
+     display: flex;
+     list-style-type: none;
+     gap: 2rem;
+}
+.nav a {
+    text-decoration: none;
+    color: #eee;
+}
+.nav a:hover {
+    color: #00be7b;
+}
+hr {
+    opacity: 15%;
+}
+/*--------------------------*/
+
+.names {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    font-size: 2rem;    
+}
+
+.box {
+    width: calc(50% - 10px);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.name {
+    background: #9333ea;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.name:hover {
+    background: #7c2ae8;
+}
+
+.desc {
+    max-height: 0;
+    overflow: hidden;
+    background: #eee;
+    transition: 0.4s ease;
+    padding: 0 10px;
+}
+
+.box.active .desc {
+    max-height: 150px;
+    padding: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    header img {
+        margin: 0;
+        height: 8rem;
+        width: 9rem;
+    }
+
+    .nav {
+        font-size: 1.5rem;
+        height: auto;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .names {
+        font-size: 1.5rem;
+    }
+
+    .box {
+        width: 100%; /* بدل 2 في السطر */
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+}

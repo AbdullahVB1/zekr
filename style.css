@@ -1,0 +1,185 @@
+* {
+     margin: 9;
+    padding: 7;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #02462e;
+}
+header img {
+    display: flex;
+    height: 13rem;
+    width: 15rem;
+    margin: -4rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px auto;
+    max-width: 1200px;
+}
+.nav {
+    display: flex;
+    gap: 2rem;
+    height:8rem;
+    font-size:2.5rem;
+}
+.nav ul {
+     display: flex;
+     list-style-type: none;
+     gap: 2rem;
+}
+.nav a {
+    text-decoration: none;
+    color: #eee;
+}
+.nav a:hover {
+    color: #00be7b;
+}
+hr {
+    opacity: 15%;
+}
+.hero img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -5.7rem auto;
+    height: 40rem;
+
+}
+/*This is a section1*/
+.btns {
+    display: flex;
+    flex-wrap: wrap;   /* مهم جدًا عشان ينزل سطر جديد */
+    gap: 20px;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #fec700;
+    padding: 3px;
+    border-radius: 10px;
+
+    width: calc(50% - 20px); /* أهم سطر: اتنين في السطر */
+}
+
+.item:hover{
+    color: red;
+}
+.item img {
+    height: 10rem;
+}
+
+.item a {
+    text-decoration: none;
+    color: white;
+    font-size: 60px;
+}
+.item span {
+    font-size: 4rem;
+}
+/*end*/
+/*This is section2*/
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #001935;
+    color: white;
+
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.8rem;
+
+    width: calc(40% - 1px); /* كل 2 في سطر */
+}
+
+.con img {
+    height: 10rem;
+}
+
+.con a {
+    color: white;
+    text-decoration: none;
+}
+#con1 img{
+    height: 15rem;
+}
+/*end section2*/
+
+.copyright {
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+    padding: 15px;
+    font-size: 14px;
+
+    background: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    header img {
+        margin: 0;
+        height: 8rem;
+        width: 9rem;
+    }
+
+    .nav {
+        font-size: 1.5rem;
+        height: auto;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .hero img {
+        height: 20rem;
+        margin: 0 auto;
+    }
+
+    .item {
+        width: 100%; /* بدل اتنين في السطر */
+    }
+
+    .con {
+        width: 100%; /* بدل 40% */
+    }
+
+    .item a {
+        font-size: 30px;
+    }
+
+    .item span {
+        font-size: 2rem;
+    }
+}

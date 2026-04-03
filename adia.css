@@ -1,0 +1,137 @@
+* {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #02462e;
+}
+header img {
+    display: flex;
+    height: 13rem;
+    width: 15rem;
+    margin: -4rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px auto;
+    max-width: 1200px;
+}
+.nav {
+    display: flex;
+    gap: 2rem;
+    height:8rem;
+    font-size:2.5rem;
+}
+.nav ul {
+     display: flex;
+     list-style-type: none;
+     gap: 2rem;
+}
+.nav a {
+    text-decoration: none;
+    color: #eee;
+}
+.nav a:hover {
+    color: #00be7b;
+}
+hr {
+    opacity: 15%;
+}
+
+
+
+.title {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* كل عنصر ياخد نص العرض */
+.box {
+    width: calc(50% - 15px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.name {
+    background: #9333ea;
+    color: white;
+    padding: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.name:hover {
+    background: #7c2ae8;
+}
+
+.desc {
+    max-height: 0;
+    overflow: hidden;
+    background: #eee;
+    padding: 0 10px;
+    transition: 0.4s ease;
+    font-size: 30px;
+}
+
+.box.active .desc {
+    max-height: 300px;
+    padding: 15px;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    header img {
+        margin: 0;
+        height: 8rem;
+        width: 9rem;
+    }
+
+    .nav {
+        font-size: 1.5rem;
+        height: auto;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .box {
+        width: 100%; /* بدل 2 في السطر */
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .desc {
+        font-size: 18px;
+    }
+}
